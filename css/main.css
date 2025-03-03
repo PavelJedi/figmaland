@@ -1,0 +1,25 @@
+@import "base/variables.css";
+@import "base/reset.css";
+@import "base/typography.css";
+@import "base/utilities.css";
+
+/* Import layout components */
+@import "layout/header.css";
+@import "layout/footer.css";
+@import "layout/grid.css";
+
+/* Import UI components */
+@import "components/buttons.css";
+@import "components/carousel.css";
+@import "components/accordion.css";
+@import "components/portfolio.css";
+@import "components/pagination.css";
+@import "components/forms.css";
+@import "components/cards.css";
+
+/* Import section styles */
+@import "sections/hero.css";
+@import "sections/features.css";
+@import "sections/pricing.css";
+@import "sections/faq.css";
+@import "sections/contact.css";

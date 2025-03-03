@@ -1,0 +1,82 @@
+/* Accordion Section */
+.accordion {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.accordion__item {
+  margin-bottom: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.accordion__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--background-color);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.accordion__header:hover {
+  background-color: #f9f9f9;
+}
+
+.accordion__title {
+  font-size: 18px;
+  color: var(--dark-text);
+}
+
+.accordion__icon {
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+
+.accordion__icon::before,
+.accordion__icon::after {
+  content: '';
+  position: absolute;
+  background-color: var(--dark-text);
+  transition: var(--transition);
+}
+
+.accordion__icon::before {
+  top: 7px;
+  left: 0;
+  width: 16px;
+  height: 2px;
+}
+
+.accordion__icon::after {
+  top: 0;
+  left: 7px;
+  width: 2px;
+  height: 16px;
+}
+
+.accordion__item.active .accordion__icon::after {
+  transform: rotate(90deg);
+  opacity: 0;
+}
+
+.accordion__content {
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion__item.active .accordion__content {
+  padding: 20px;
+  max-height: 200px;
+}
+
+@media (max-width: 576px) {
+  .accordion__title {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,41 @@
+/* Button Styles */
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  border: none;
+  font-size: 16px;
+}
+
+.button--primary {
+  background-color: var(--primary-color);
+  color: var(--light-text);
+}
+
+.button--primary:hover {
+  background-color: #1a7fd6;
+}
+
+.button--outline {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.button--outline:hover {
+  background-color: var(--primary-color);
+  color: var(--light-text);
+}
+
+.button--large {
+  padding: 16px 32px;
+  font-size: 18px;
+}
+
+.button--full {
+  width: 100%;
+  text-align: center;
+}

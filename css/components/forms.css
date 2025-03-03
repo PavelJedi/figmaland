@@ -1,0 +1,25 @@
+/* Forms */
+.contact__form-group {
+  margin-bottom: 20px;
+}
+
+.contact__input,
+.contact__textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  transition: var(--transition);
+}
+
+.contact__input:focus,
+.contact__textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.contact__textarea {
+  min-height: 150px;
+  resize: vertical;
+}
