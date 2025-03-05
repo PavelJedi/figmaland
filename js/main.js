@@ -1,4 +1,3 @@
-import '../css/main.css';
 import { initMobileMenu } from './modules/mobileMenu.js';
 import { initCarousel } from './modules/carousel.js';
 import { initAccordion } from './modules/accordion.js';

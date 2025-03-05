@@ -19,6 +19,5 @@ export function initCarousel() {
     });
     
     // Remove active class from all dots
-    car <boltArtifact id="reorganize-project-structure-continued" title="Reorganize Project Structure (Continued)">
   }
 }

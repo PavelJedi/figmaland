@@ -4,79 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Figmaland Business</title>
+    <link rel="icon" href="data:," />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <div class="page">
+    <main class="page">
       <!-- Header -->
-      <header class="header">
-        <div class="container">
-          <div class="header__content">
-            <div class="header__logo">
-              <img
-                src="https://via.placeholder.com/150x50/2091F9/FFFFFF?text=Figmaland"
-                alt="Figmaland Logo"
-                class="header__logo-img"
-              />
+      <div class="hero-wrapper">
+        <header class="header">
+          <div class="container">
+            <div class="header__content">
+              <div class="header__logo">
+                <img
+                  src="./assets/images/logo.svg"
+                  alt="Figmaland Logo"
+                  class="header__logo-img"
+                />
+              </div>
+              <nav class="header__nav">
+                <ul class="header__menu">
+                  <li class="header__menu-item">
+                    <a href="#home" class="header__menu-link">Home</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a href="#product" class="header__menu-link">Product</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a href="#pricing" class="header__menu-link">Pricing</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a href="#about" class="header__menu-link">About</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a href="#contact" class="header__menu-link">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header__actions">
+                <a href="#" class="header__social-link"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="header__social-link"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="header__social-link"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+              <button class="header__burger">
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+              </button>
             </div>
-            <nav class="header__nav">
-              <ul class="header__menu">
-                <li class="header__menu-item">
-                  <a href="#home" class="header__menu-link">Home</a>
-                </li>
-                <li class="header__menu-item">
-                  <a href="#product" class="header__menu-link">Product</a>
-                </li>
-                <li class="header__menu-item">
-                  <a href="#pricing" class="header__menu-link">Pricing</a>
-                </li>
-                <li class="header__menu-item">
-                  <a href="#about" class="header__menu-link">About</a>
-                </li>
-                <li class="header__menu-item">
-                  <a href="#contact" class="header__menu-link">Contact</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="header__actions">
-              <button class="button button--primary">Sign In</button>
-              <button class="button button--outline">Sign Up</button>
-            </div>
-            <button class="header__burger">
-              <span class="header__burger-line"></span>
-              <span class="header__burger-line"></span>
-              <span class="header__burger-line"></span>
-            </button>
           </div>
-        </div>
-      </header>
+        </header>
 
-      <!-- Hero Section -->
-      <section class="hero" id="home">
-        <div class="container">
-          <div class="hero__content">
-            <h1 class="hero__title">The best products start with Figma</h1>
-            <p class="hero__subtitle">
-              Most calendars are designed for teams. Slate is designed for
-              freelancers
-            </p>
-            <button class="button button--primary button--large">
-              Try For Free
-            </button>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+          <div class="container">
+            <div class="hero__content">
+              <h1 class="hero__title">The best products start with Figma</h1>
+              <p class="hero__subtitle">
+                Most calendars are designed for teams. Slate is designed for
+                freelancers
+              </p>
+              <button class="button button--primary button--large">
+                Try For Free
+              </button>
+            </div>
           </div>
-          <div class="hero__image">
-            <img
-              src="https://via.placeholder.com/600x400/EEEEEE/999999?text=Hero+Image"
-              alt="Hero Image"
-              class="hero__img"
-            />
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       <!-- Features Section -->
       <section class="features" id="product">
@@ -527,7 +530,7 @@
           </div>
         </div>
       </footer>
-    </div>
+    </main>
     <script type="module" src="js/main.js"></script>
   </body>
 </html>
